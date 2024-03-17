@@ -1,0 +1,236 @@
+body {
+    display: flex;
+    height: 158vh;
+    justify-content: center;
+    background-color: #1f242d;
+    align-items: center;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.container {
+    max-width: 350px;
+    width: 50%;
+    height: 80%;
+    background:  #323946;
+    padding: 25px 20px;
+    border-radius: 10px;
+    border: .2rem solid #1f242d;
+}
+
+    .container .title {
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+        color: white;
+    }
+
+        .container .title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            background: linear-gradient(135deg, #0ef, #323946);
+        }
+
+    .container form .user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+        color: white;
+    }
+
+form .user-details .input-box {
+    margin-bottom: 25px;
+    width: calc(100% / 1 - 20px);
+    margin-right: -35px;
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box1 .details1 {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box2 .details2 {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.input-box2 p{
+    color: #0ef;
+}
+
+
+.user-details .input-box1 textarea{
+    width: 70%;
+    padding: 1rem;
+    font-size: 1.6rem;
+   /* color: var(--text-color);
+    background-color: var(--second-bg-color);*/
+    border-radius: .8rem;
+    margin: 0rem 0;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input{
+    height: 40px;
+    width: 80%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+
+.user-details .input-box select{
+    height: 40px;
+    width: 85%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+    .user-details .input-box input:valid {
+        border-color: #0ef;
+    }
+
+form .button {
+    height: 45px;
+    margin: -5px 0;
+}
+
+form .button input {
+    height: 90%;
+    width: 25%;
+    outline: none;
+    margin-top: 6rem;
+    margin-left: 16rem;
+    color: black;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: .5s ease;
+    background: #0ef;
+}
+
+    form .button input:hover {
+        box-shadow: none;
+    }
+
+    .button1 {
+        height: 45px;
+        margin: -5px 0;
+    }
+
+    .button1 button{
+    position: absolute;    
+    height: 6%;
+    width: 6%;
+    outline: none;
+    margin-top: -2.6rem;
+    margin-left: 0rem;
+    color: black;
+    border: none;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: .5s ease;
+    background: #0ef;
+    }
+
+    .button2 button{  
+        height: 40px;
+        width: 25%;
+        outline: none;
+        margin-top: 3.5rem;
+        margin-left: 17rem;
+        color: black;
+        border: none;
+        font-size: 19px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        transition: .5s ease;
+        background: #0ef;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+               margin-top: 5rem;
+               margin-left: 0rem; 
+              height: 120vh;  
+              width: 100%;
+            }
+            form .button input{
+                width: 35%;
+                margin-top: -7rem;
+            }
+            form .user-details .input-box {
+            
+                margin-bottom: 5px;
+                width: calc(80% / 1 - 20px);
+            }
+            .container .title {
+                font-size: 20px;
+                font-weight: 600;
+                position: relative;
+            }
+            
+            .user-details .input-box {
+                width: 14rem;
+            }
+            
+        
+            form .button input{
+                margin-left: 105px;
+            }
+
+            .button1 button{
+                width: 6rem;
+            }
+
+            .button2 button{
+                margin-left: 15rem;
+            }
+            
+          }
+
+          @media  (max-width: 450px) {
+            .user-details .input-box{
+                width: 14rem;
+            }
+          }
+          

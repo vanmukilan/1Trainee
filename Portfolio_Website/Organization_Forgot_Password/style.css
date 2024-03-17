@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background:#323946;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+    .container .title {
+        font-size: 25px;
+        font-weight: 500;
+        color: white;
+        position: relative;
+    }
+
+        .container .title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            background: linear-gradient(135deg, #0ef, #323946);
+        }
+
+    .container form .user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+        color: white;
+    }
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 120%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+    .user-details .input-box input:focus,
+    .user-details .input-box input:valid {
+        border-color: #0b0d0c;
+    }
+
+p{
+    color: white;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    outline: none;
+    color: black;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: .5s ease;
+    background: #0ef;
+}
+
+
+        @media (max-width: 600px) {
+            .container {
+              width: 80%;
+            }
+
+            form .user-details .input-box {
+                margin-bottom: 15px;
+                width: calc(95% / 1 - 20px);
+            }
+
+            .user-details .input-box input{
+                width: 95%;
+            }
+
+            form .button {
+                height: 45px;
+                margin: 45px 0;
+                width: 180%;
+            }
+            
+            form .user-details .input-box{
+                width: 100%;
+            }
+        }
+
+
+

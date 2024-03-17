@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>1Trainee</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/1traineelogo.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Submit Review</div>
+        <form>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Name <span style="color: red;">*</span></span>
+                    <input type="text" class="form-control" placeholder="Enter your first name" name="FirstName" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">Contact No.<span style="color: red;">*</span> </span>
+                    <input type="tel" class="form-control" placeholder="Enter your contact no" name="ContactNo" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">Email <span style="color: red;">*</span> </span>
+                    <input type="email" class="form-control" placeholder="Enter your email" name="EmailID" required />
+                    <div style="color: red;">
+                        <!-- Display error message here if needed -->
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="details">Otp<span style="color: red;">*</span> </span>
+                    <input type="otp" class="form-control" placeholder="xxxx" name="xxxx" required />
+                </div>
+                <div class="input-box2">
+                    <span class="details2">Photo<span style="color: red;">*</span> </span>
+                    <input type="file">
+                    <p>(only .gif, .jpg, .jpeg, .png)</p>
+                </div>
+                <div class="input-box1">
+                    
+                    <span class="details1">Write Review<span style="color: red;">*</span> </span>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="write review(150character)"></textarea>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="button2">
+                   <form method="POST" action="../trainee.html#Portfolio"><button>Submit</button></form>
+                </div>
+                <div class="button1">
+                    <form action="../trainee.html#Portfolio" method="post"><button>close</button></form>
+                 </div>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
